@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#12121F"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <!-- 🔶 Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BurpMobile"
+        android:textSize="32sp"
+        android:textColor="#FF7A00"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Herramientas de análisis de red"
+        android:textSize="14sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- 📦 Contenedor de botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp">
+
+        <!-- Botón HTTP Tester -->
+        <LinearLayout
+            android:id="@+id/card_http_tester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E2F"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌐 HTTP Tester"
+                android:textSize="18sp"
+                android:textColor="#FF9500"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar peticiones GET, POST, HEAD"
+                android:textSize="13sp"
+                android:textColor="#999999"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Botón Repeater -->
+        <LinearLayout
+            android:id="@+id/card_repeater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E2F"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔁 Repeater"
+                android:textSize="18sp"
+                android:textColor="#FF9500"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modificar y reenviar solicitudes"
+                android:textSize="13sp"
+                android:textColor="#999999"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Botón Codificador/Decodificador -->
+        <LinearLayout
+            android:id="@+id/card_encoder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E2F"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔄 Codificador / Decodificador"
+                android:textSize="18sp"
+                android:textColor="#FF9500"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base64 y más formatos"
+                android:textSize="13sp"
+                android:textColor="#999999"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Botón Seguridad Web -->
+        <LinearLayout
+            android:id="@+id/card_security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E2F"
+            android:padding="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🛡️ Verificador de Seguridad"
+                android:textSize="18sp"
+                android:textColor="#FF9500"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Revisar encabezados de un sitio web"
+                android:textSize="13sp"
+                android:textColor="#999999"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versión 1.0 • BurpMobile"
+        android:textSize="12sp"
+        android:textColor="#555555"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
