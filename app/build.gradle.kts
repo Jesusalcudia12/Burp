@@ -1,15 +1,13 @@
-plugins {
-    id("com.android.application")
-}
+apply plugin: "com.android.application"
+apply plugin: "kotlin.android"
 
 android {
-    namespace = "com.burpmobile"
-    compileSdk = 31
+    compileSdk = 30  // 4.2.2 funciona bien hasta aquí
 
     defaultConfig {
         applicationId = "com.burpmobile"
         minSdk = 23
-        targetSdk = 31
+        targetSdk = 30
         versionCode = 1
         versionName = "1.0"
     }
@@ -21,11 +19,6 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-}
-
-configurations.all {
-    exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib-jdk7")
-    exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib-jdk8")
+    implementation("androidx.core:core-ktx:1.7.0")
+    implementation("androidx.appcompat:appcompat:1.4.0")
 }
