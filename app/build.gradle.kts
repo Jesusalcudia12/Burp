@@ -1,15 +1,15 @@
 plugins {
-    id("com.android.application") version "8.1.0"
+    id("com.android.application") version "7.4.2"
 }
 
 android {
     namespace = "com.burpmobile"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.burpmobile"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
     }
