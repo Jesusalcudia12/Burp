@@ -1,8 +1,10 @@
-apply plugin: "com.android.application"
-apply plugin: "kotlin.android"
+plugins {
+    id("com.android.application")
+    id("kotlin-android")
+}
 
 android {
-    compileSdk = 30  // 4.2.2 funciona bien hasta aquí
+    compileSdk = 30
 
     defaultConfig {
         applicationId = "com.burpmobile"
